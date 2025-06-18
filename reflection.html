@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的心得分享</title>
-  <link rel="stylesheet" href="reflection.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>心得感想</title>
+  <link rel="stylesheet" href="style1.css" />
 </head>
 <body>
   <header>
-    <h1>我的心得分享</h1>
-    <nav>
-      <a href="index.html">首頁</a>
-      <a href="#">關於我</a>
-      <a href="#">聯絡方式</a>
+    <h1>我的心得感想</h1>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="切換選單">☰</button>
+    <nav id="navbar" aria-label="主選單">
+      <ul>
+        <li><a href="index.html">自我介紹</a></li>
+        <li><a href="works.html">作品展示</a></li>
+        <li><a href="reflection.html">心得感想</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section class="post">
-      <h2>第 1 篇｜學習 HTML 的心得</h2>
-      <p class="date">2025-06-18</p>
-      <p>學習 HTML 讓我了解網站的基本結構。從標題、段落到圖片插入，每個標籤都有其功能，掌握這些可以讓我開始製作自己的網頁。</p>
-    </section>
+    <section class="works-grid">
+      <div class="work-card">
+        <h3>心得一：學習 HTML 的體驗</h3>
+        <p>剛開始接觸 HTML 時，覺得語法簡單但邏輯很重要。透過實作網頁，我學會了如何組織資訊、建立清楚的內容結構。</p>
+      </div>
 
-    <section class="post">
-      <h2>第 2 篇｜CSS 真的很有趣！</h2>
-      <p class="date">2025-06-15</p>
-      <p>CSS 可以改變整個網站的外觀，例如字體、顏色、排版。透過 class 與 id 的使用，我可以更有彈性地控制每個區塊的樣式。</p>
-    </section>
+      <div class="work-card">
+        <h3>心得二：CSS 美化技巧</h3>
+        <p>CSS 讓靜態的網頁變得生動有趣。從顏色配置、排版到 hover 效果，讓我了解美感與實用要並重。</p>
+      </div>
 
-    <!-- 可自行新增更多心得 -->
+      <div class="work-card">
+        <h3>心得三：JavaScript 初探</h3>
+        <p>JavaScript 幫助我讓網站「活」了起來。即使只會簡單功能如按鈕互動，也能大大提升使用者體驗。</p>
+      </div>
+
+      <div class="work-card">
+        <h3>心得四：作品整合與發佈</h3>
+        <p>透過 GitHub Pages 發佈我的網站，是一個非常有成就感的體驗。從本機端到雲端，每一步都很有學習價值。</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 小白出品</p>
+    <p>&copy; 2025 小白</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
