@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>作品展示</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header>
+    <h1>我的作品</h1>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="切換選單">☰</button>
+    <nav id="navbar" aria-label="主選單">
+      <ul>
+        <li><a href="index.html">自我介紹</a></li>
+        <li><a href="works.html">作品展示</a></li>
+        <li><a href="reflection.html">心得感想</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="works-grid">
+      <div class="work-card">
+        <h3>作品一：個人部落格</h3>
+        <p>使用 HTML、CSS 製作的個人部落格範例，內容包含文章列表與響應式設計。</p>
+        <a href="https://thomas980130.github.io/Tomas0130/" target="_blank" rel="noopener noreferrer">查看作品</a>
+      </div>
+
+      <div class="work-card">
+        <h3>作品二：API對接GPTAI</h3>
+        <p>用 JavaScript API對接，可以自行搭建聊天視窗。</p>
+        <a href="https://thomas980130.github.io/STUST-529/" target="_blank" rel="noopener noreferrer">查看作品</a>
+      </div>
+
+      <div class="work-card">
+        <h3>作品三：活動報名系統</h3>
+        <p>基於JavaScript的導向外部資料庫，配合Google Apps Script試算表紀錄</p>
+        <a href="https://thomas980130.github.io/STUST-01/" target="_blank" rel="noopener noreferrer">查看作品</a>
+      </div>
+      <div class="work-card">
+        <h3>作品四：小組網頁開發</h3>
+        <p>網站內使用了RWD，以及回饋表單等等 透過外部開源的工具</p>
+        <a href="https://thomas980130.github.io/STUST2Team/index.html" target="_blank" rel="noopener noreferrer">查看作品</a>
+      </div>
+      <div class="work-card">
+        <h3>作品五：實戰滲透測試</h3>
+        <p>使用 Linux Kali進行網站掃描，掃描到北部某知名珠寶網站有 Xss漏洞</p>
+        <a href="https://github.com/Thomas980130/silubrxss-bug" target="_blank" rel="noopener noreferrer">查看作品</a>
+      </div>
+      <div class="work-card">
+        <h3>作品六：待辦清單 App</h3>
+        <p>基於 React 框架開發的待辦事項清單，可以新增、刪除、標記完成。</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">查看作品</a>
+
+      <!-- 你可以繼續新增更多作品卡片 -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 小白</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
